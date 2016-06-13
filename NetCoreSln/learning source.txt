@@ -13,3 +13,4 @@ http://thedatafarm.com/
 https://www.learnhowtoprogram.com/
 http://cakebuild.net/
 http://dotnetliberty.com/
+http://www.jeffreyfritz.com/
