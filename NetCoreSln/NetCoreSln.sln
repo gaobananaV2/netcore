@@ -38,9 +38,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Util.Domain", "NetFramework\Util.Domain\Util.Domain.csproj", "{0B65FDE8-D3B6-480D-ABA1-BCD581D5397C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Doc", "Doc", "{297203DC-1AF4-4F0D-85D1-EC4FADEDE284}"
-	ProjectSection(SolutionItems) = preProject
-		db.txt = db.txt
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docs", "Docs\Docs.csproj", "{67FA23B5-C291-4881-BE26-A24CC2496540}"
 EndProject
