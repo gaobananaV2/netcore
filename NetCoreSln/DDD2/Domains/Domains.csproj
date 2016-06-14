@@ -42,16 +42,18 @@
   <ItemGroup>
     <Compile Include="Aggregate\User.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="DomainService\PasswordEncryptService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="overall.txt" />
     <Content Include="聚合.txt" />
     <Content Include="实体和值对象.txt" />
     <Content Include="领域事件.txt" />
+    <Content Include="领域服务.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DomainEvent\" />
-    <Folder Include="DomainService\" />
     <Folder Include="Entity\" />
     <Folder Include="ValueObject\" />
   </ItemGroup>
