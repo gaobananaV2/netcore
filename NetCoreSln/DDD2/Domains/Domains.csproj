@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="overall.txt" />
+    <Content Include="urls.txt" />
     <Content Include="聚合.txt" />
     <Content Include="实体和值对象.txt" />
     <Content Include="领域事件.txt" />
