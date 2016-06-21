@@ -6,6 +6,9 @@
 //npm（node package manager）nodejs的包管理器，用于node插件管理（包括安装、卸载、管理依赖等）；
 "use strict";
 
+//http://gulpjs.com/plugins/
+
+
 //导入工具包 require('node_modules里对应模块')
 var gulp = require("gulp"),
     rimraf = require("rimraf"),
