@@ -12,7 +12,7 @@ namespace WebApiOdata
         {
             ODataModelBuilder builder = new ODataConventionModelBuilder();
             builder.EntitySet<Product>("Products");
-            builder.EntitySet<Product>("Demos");
+            builder.EntitySet<DemoClass>("Demos");
 
 
             config.MapODataServiceRoute(

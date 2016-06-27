@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2016/6/21 15:45:13
+// Generation date: 2016/6/27 15:21:06
 namespace Client.WebApiOdata.Models
 {
     /// <summary>
@@ -287,12 +287,38 @@ namespace Client.Default
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::Client.WebApiOdata.Models.Product> _Products;
         /// <summary>
+        /// There are no comments for Demos in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        [global::Microsoft.OData.Client.OriginalNameAttribute("Demos")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::Client.WebApiOdata.Models.Product> Demos
+        {
+            get
+            {
+                if ((this._Demos == null))
+                {
+                    this._Demos = base.CreateQuery<global::Client.WebApiOdata.Models.Product>("Demos");
+                }
+                return this._Demos;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::Client.WebApiOdata.Models.Product> _Demos;
+        /// <summary>
         /// There are no comments for Products in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         public void AddToProducts(global::Client.WebApiOdata.Models.Product product)
         {
             base.AddObject("Products", product);
+        }
+        /// <summary>
+        /// There are no comments for Demos in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
+        public void AddToDemos(global::Client.WebApiOdata.Models.Product product)
+        {
+            base.AddObject("Demos", product);
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.4.0")]
         private abstract class GeneratedEdmModel
@@ -316,6 +342,7 @@ namespace Client.Default
     <Schema Namespace=""Default"" xmlns=""http://docs.oasis-open.org/odata/ns/edm"">
       <EntityContainer Name=""Container"">
         <EntitySet Name=""Products"" EntityType=""WebApiOdata.Models.Product"" />
+        <EntitySet Name=""Demos"" EntityType=""WebApiOdata.Models.Product"" />
       </EntityContainer>
     </Schema>
   </edmx:DataServices>

@@ -1,16 +1,33 @@
 ﻿using Client.WebApiOdata.Models;
+using Microsoft.OData.Core;
 using System;
 
 namespace Client
 {
     class Program
     {
-        // Get an entire entity set.
         static void ListAllProducts(Default.Container container)
         {
-            foreach (var p in container.Products)
+            foreach (var p in container.Demos)
             {
                 Console.WriteLine("{0} {1} {2}", p.Name, p.Price, p.Category);
+            }
+        } 
+
+        static void Main(string[] args)
+        {
+            string serviceUri = "http://localhost:56744/";
+            var container = new Default.Container(new Uri(serviceUri));
+            container.SendingRequest2 += Container_SendingRequest2;
+            ListAllProducts(container);
+        }
+
+        private static void Container_SendingRequest2(object sender, Microsoft.OData.Client.SendingRequest2EventArgs e)
+        {
+            IODataRequestMessage requestMessage = (IODataRequestMessage)e.RequestMessage;
+            if (requestMessage != null)
+            {
+                requestMessage.SetHeader("MinDataServiceVersion", "3.0");
             }
         }
 
@@ -24,22 +41,5 @@ namespace Client
             }
         }
 
-
-        static void Main(string[] args)
-        {
-            // TODO: Replace with your local URI.
-            string serviceUri = "http://localhost:56744/";
-            var container = new Default.Container(new Uri(serviceUri));
-
-            var product = new  Product()
-            {
-                Name = "Yo-yo",
-                Category = "Toys",
-                Price = 4.95M
-            };
-
-            AddProduct(container, product);
-            ListAllProducts(container);
-        }
     }
 }

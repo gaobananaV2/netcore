@@ -16,7 +16,7 @@ namespace MVCAppEF.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
+            ViewData["Message2"] = "mvc2 and after desc";
             return View();
         }
 
