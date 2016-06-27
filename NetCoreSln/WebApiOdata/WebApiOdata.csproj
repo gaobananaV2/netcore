@@ -107,14 +107,30 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Migrations\clientDrivenPaging.png" />
+    <Content Include="Migrations\CodeFirstMigrations.png" />
+    <Content Include="Migrations\product.png" />
+    <Content Include="Migrations\products.png" />
+    <Content Include="Migrations\top.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\DemosController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201606270305547_InitialCreate.cs" />
+    <Compile Include="Migrations\201606270305547_InitialCreate.Designer.cs">
+      <DependentUpon>201606270305547_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201606270327376_ADDDEMOCLASS.cs" />
+    <Compile Include="Migrations\201606270327376_ADDDEMOCLASS.Designer.cs">
+      <DependentUpon>201606270327376_ADDDEMOCLASS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\DemoClass.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductsContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,6 +146,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201606270305547_InitialCreate.resx">
+      <DependentUpon>201606270305547_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201606270327376_ADDDEMOCLASS.resx">
+      <DependentUpon>201606270327376_ADDDEMOCLASS.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
