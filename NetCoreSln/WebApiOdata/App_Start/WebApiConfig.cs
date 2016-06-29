@@ -14,6 +14,17 @@ namespace WebApiOdata
             builder.EntitySet<Product>("Products");
             builder.EntitySet<DemoClass>("Demos");
 
+            builder.Namespace = "ProductService";
+            builder.EntityType<Product>()
+                .Action("Rate")
+                .Parameter<int>("Rating");
+            //POST  /Products(1)/ProductService.Rate
+
+            builder.Namespace = "ProductService";
+            builder.EntityType<Product>().Collection
+                .Function("MostExpensive")
+                .Returns<double>();
+            //GET  /Products/ProductService.MostExpensive 
 
             config.MapODataServiceRoute(
                 routeName: "ODataRoute",

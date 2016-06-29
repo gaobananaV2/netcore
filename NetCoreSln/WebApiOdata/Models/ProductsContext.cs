@@ -10,6 +10,6 @@ namespace WebApiOdata.Models
         }
         public DbSet<Product> Products { get; set; }
         public DbSet<DemoClass> Demos { get; set; }
-        
+        public DbSet<ProductRating> Ratings { get; set; }
     }
 }
