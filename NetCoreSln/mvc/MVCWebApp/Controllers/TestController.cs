@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MVCWebApp.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -31,6 +32,17 @@ namespace MVCWebApp.Controllers
         public string SimpleMethod()
         {
             return "Hi, I am not action method";
+        }
+
+        public ActionResult GetView()
+        {
+            Employee emp = new Employee();
+            emp.FirstName = "Sukesh";
+            emp.LastName = "Marla";
+            emp.Salary = 20000;
+
+            ViewData["Employee"] = emp;
+            return View("MyView");
         }
     }
 }
