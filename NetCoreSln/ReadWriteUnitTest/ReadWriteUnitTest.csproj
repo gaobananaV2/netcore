@@ -52,7 +52,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Data\WeiBoTest.cs" />
+    <Compile Include="Data\WeiBoDapperTestGetList.cs" />
+    <Compile Include="Data\WeiBoSqlHelperTestGetList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -5,10 +5,10 @@ using Data.sqlhelper;
 namespace ReadWriteUnitTest.Data
 {
     [TestClass]
-    public class WeiBoTest
+    public class WeiBoSqlHelperTestGetList
     {
         [TestMethod]
-        public void TestWeiBoGetList()
+        public void  WeiBoSqlHelper_GetList()
         {
             var result = new WeiBo().GetList();
             Assert.IsNotNull(result);
