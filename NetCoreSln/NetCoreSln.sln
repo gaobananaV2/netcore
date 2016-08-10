@@ -81,6 +81,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadWriteUnitTest", "ReadWriteUnitTest\ReadWriteUnitTest.csproj", "{2A08AE15-0BEA-418D-AD20-935EB93481DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peak.Utilities", "Peak.Utilities\Peak.Utilities.csproj", "{C0345E3F-9CB7-4370-A927-84D6CFCE902C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peak.Infrastructure", "Peak.Infrastructure\Peak.Infrastructure.csproj", "{A4722EBC-6993-40AB-BC5D-AD747D068049}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -195,6 +199,14 @@ Global
 		{2A08AE15-0BEA-418D-AD20-935EB93481DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A08AE15-0BEA-418D-AD20-935EB93481DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A08AE15-0BEA-418D-AD20-935EB93481DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0345E3F-9CB7-4370-A927-84D6CFCE902C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0345E3F-9CB7-4370-A927-84D6CFCE902C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0345E3F-9CB7-4370-A927-84D6CFCE902C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0345E3F-9CB7-4370-A927-84D6CFCE902C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4722EBC-6993-40AB-BC5D-AD747D068049}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4722EBC-6993-40AB-BC5D-AD747D068049}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4722EBC-6993-40AB-BC5D-AD747D068049}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4722EBC-6993-40AB-BC5D-AD747D068049}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
