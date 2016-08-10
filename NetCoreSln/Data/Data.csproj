@@ -43,9 +43,21 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlhelper\BaseModel.cs" />
+    <Compile Include="sqlhelper\IWeiBo.cs" />
     <Compile Include="sqlhelper\IWeiBoAnalysis.cs" />
     <Compile Include="sqlhelper\SQLHelper.cs" />
+    <Compile Include="sqlhelper\WeiBo.cs" />
     <Compile Include="sqlhelper\WeiBoAnalysis.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Peak.Infrastructure\Peak.Infrastructure.csproj">
+      <Project>{a4722ebc-6993-40ab-bc5d-ad747d068049}</Project>
+      <Name>Peak.Infrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Peak.Utilities\Peak.Utilities.csproj">
+      <Project>{c0345e3f-9cb7-4370-a927-84d6cfce902c}</Project>
+      <Name>Peak.Utilities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -142,7 +142,7 @@ namespace Peak.Utilities
         public static DateTime? GetStartDateOfQuarter(int year, int quarter)
         {
             string strDt = year.ToString() + "-" + ((quarter-1)*3+1).ToString() + "-1";
-            return ParseToDateValue(strDt);
+            return strDt.ToDateTime();
         }
 
         /// <summary>
@@ -178,7 +178,7 @@ namespace Peak.Utilities
         public static DateTime? GetStartDateOfMonth(int year, int month)
         {
             string strDt = year.ToString() + "-" + month.ToString() + "-1";
-            return ParseToDateValue(strDt);
+            return strDt.ToDateTime();
         }
 
         /// <summary>
@@ -276,7 +276,7 @@ namespace Peak.Utilities
         }
         public static string ParseDateToYearMonth(object dt)
         {
-            var dtObj = ParseToDateValue(dt);
+            var dtObj = dt.ToDateTime();
             if (dtObj == null) return string.Empty;
             return string.Format("{0}年{1}月", dtObj.Value.Year, dtObj.Value.Month);
         }

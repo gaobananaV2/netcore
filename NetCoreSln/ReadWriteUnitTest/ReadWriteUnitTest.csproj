@@ -52,8 +52,17 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Data\UnitTest1.cs" />
+    <Compile Include="Data\WeiBoTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{22108689-b27e-477a-b9f7-3221f56cdc86}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
