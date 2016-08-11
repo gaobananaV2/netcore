@@ -19,9 +19,7 @@ namespace Data.sqlhelper
 
         #region Methods
         public IList<WeiBo> GetList()
-        {
-            StringBuilder sbrWhere = new StringBuilder();
-
+        { 
             string strSql = string.Format(@"
                       SELECT  [WeiBoID]
                       ,[Title]
@@ -39,8 +37,7 @@ namespace Data.sqlhelper
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     list.Add(this.Parse(dt.Rows[i]));
-                }
-
+                } 
             }
             return list;
         }
