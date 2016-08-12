@@ -19,6 +19,9 @@ namespace Data.EF
         {
             modelBuilder.Entity<WeiBo>().ToTable("WeiBo");
             base.OnModelCreating(modelBuilder);
+
+            //base.Configuration.LazyLoadingEnabled = false; // Disable Lazy Loading
+
             //modelBuilder.Entity<WeiBo>()
             //    .HasKey(k => k.WeiBoId) //设置主键
             //    .Property(q => q.Content).IsRequired();//设置不能为空
