@@ -10,12 +10,15 @@ namespace Data.EF
         public EFContext()
             : base("name=EFModel")
         {
+            Database.SetInitializer<EFContext>(null);
         }
 
         public DbSet<WeiBo> WeiBos{ get; set; } 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<WeiBo>().ToTable("WeiBo");
+            base.OnModelCreating(modelBuilder);
             //modelBuilder.Entity<WeiBo>()
             //    .HasKey(k => k.WeiBoId) //设置主键
             //    .Property(q => q.Content).IsRequired();//设置不能为空
@@ -23,7 +26,7 @@ namespace Data.EF
     }
 
 
-    public class WeiBo
+    public class WeiBo :BaseModel
     {
         public int WeiBoId { get; set; }
         public string Title { get; set; }

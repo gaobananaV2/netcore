@@ -1,7 +1,5 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Data.EF;
-using ReadWriteUnitTest.Data.eftest;
 
 namespace ReadWriteUnitTest.Data
 {
@@ -11,11 +9,16 @@ namespace ReadWriteUnitTest.Data
         [TestMethod]
         public void EF_GetList()
         {
-            var context = new EF();
+            var context = new EFContext();
             var result = context.WeiBos;
             Assert.IsNotNull(result);
-            Assert.IsTrue(result.Local.Count > 0);
-
+            var count = 0;
+            foreach (var item in result)
+            {
+                count++;
+            }
+            Assert.AreEqual(3, count);
+            Assert.IsTrue(count > 0);
         }
     }
 }
