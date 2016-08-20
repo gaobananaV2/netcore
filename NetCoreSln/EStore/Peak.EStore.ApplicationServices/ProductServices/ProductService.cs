@@ -15,6 +15,11 @@ namespace Peak.EStore.ApplicationServices.ProductServices
         {
             _productRepository = new ProductRepository();
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="categoryId"></param>
+        /// <returns></returns>
         public IList<Product> GetAllProductsIn(int categoryId)
         {
             return _productRepository.GetAllProductsIn(categoryId);
