@@ -13,18 +13,24 @@ namespace ConsoleApp
         static void Main(string[] args)
         {
             #region sync
-            SyncGet();
+            //SyncGet();
             #endregion
 
             #region EventAsyncGet
-            EventAsyncGet();
+            //EventAsyncGet();
             #endregion
 
             #region DownLoadAsyncTwoTimes
-            DownLoadAsyncTwoTimes();
+            //DownLoadAsyncTwoTimes();
 
-            //async 和 await
-            DownloadTaskAsync();
+            ////async 和 await
+            //DownloadTaskAsync();
+            #endregion
+
+            #region call webapi
+            var result = new IntegrationBase().GetResult("Products/GetList?productType=E");
+            Console.WriteLine(result);
+            
             #endregion
 
         }

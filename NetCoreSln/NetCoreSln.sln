@@ -100,6 +100,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo", "Demo", "{9C821EAC-8CE3-4F81-9331-DE52A4E970C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{9132807F-8779-4A8C-BF78-B1A6A6DB7B19}"
+	ProjectSection(ProjectDependencies) = postProject
+		{297B495D-35DE-4521-A14C-2023262692BE} = {297B495D-35DE-4521-A14C-2023262692BE}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppmvc", "WebAppmvc\WebAppmvc.csproj", "{573E4988-98CC-4904-821B-A08596A053E7}"
 EndProject
@@ -108,6 +111,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServiceApp", "WebServiceApp\WebServiceApp.csproj", "{297B495D-35DE-4521-A14C-2023262692BE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelatedDoc", "RelatedDoc\RelatedDoc.csproj", "{83725185-AA77-4AF2-82EA-A9001B0CB154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebServiceConsole", "TestWebServiceConsole\TestWebServiceConsole.csproj", "{53A83928-27FA-4FFF-B6E1-A8D88DE5ACD6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{297B495D-35DE-4521-A14C-2023262692BE} = {297B495D-35DE-4521-A14C-2023262692BE}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -263,6 +271,10 @@ Global
 		{83725185-AA77-4AF2-82EA-A9001B0CB154}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83725185-AA77-4AF2-82EA-A9001B0CB154}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83725185-AA77-4AF2-82EA-A9001B0CB154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53A83928-27FA-4FFF-B6E1-A8D88DE5ACD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53A83928-27FA-4FFF-B6E1-A8D88DE5ACD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53A83928-27FA-4FFF-B6E1-A8D88DE5ACD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53A83928-27FA-4FFF-B6E1-A8D88DE5ACD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -305,5 +317,6 @@ Global
 		{529B6737-1852-4012-B267-CCC060E59D3D} = {9C821EAC-8CE3-4F81-9331-DE52A4E970C8}
 		{297B495D-35DE-4521-A14C-2023262692BE} = {9C821EAC-8CE3-4F81-9331-DE52A4E970C8}
 		{83725185-AA77-4AF2-82EA-A9001B0CB154} = {9C821EAC-8CE3-4F81-9331-DE52A4E970C8}
+		{53A83928-27FA-4FFF-B6E1-A8D88DE5ACD6} = {9C821EAC-8CE3-4F81-9331-DE52A4E970C8}
 	EndGlobalSection
 EndGlobal
