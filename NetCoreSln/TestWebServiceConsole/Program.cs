@@ -12,6 +12,7 @@ namespace TestWebServiceConsole
         static void Main(string[] args)
         {
             TestWebServiceSoapClient client = new TestWebServiceSoapClient();
+            
             MySoapHeader header = new MySoapHeader();
             header.UserName = "peak";
             header.PassWord = "111111";

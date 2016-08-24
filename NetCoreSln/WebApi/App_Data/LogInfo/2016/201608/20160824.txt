@@ -1,0 +1,35 @@
+
+ 
+ Date£º2016-08-24 17:59:23,234 
+ ThreadID:[153] 
+ Level£º  INFO  
+ Message£ºWebServiceRequestParams{"id":""}
+ 
+
+ 
+ Date£º2016-08-24 17:59:23,352 
+ ThreadID:[153] 
+ Level£º  INFO  
+ Message£ºWebServiceResponse{"Message":"The request is invalid.","MessageDetail":"The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.String Get(Int32)' in 'WebApi.Controllers.ValuesController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter."}
+ 
+
+ 
+ Date£º2016-08-24 18:00:03,824 
+ ThreadID:[154] 
+ Level£º  INFO  
+ Message£ºWebServiceRequestParams{"id":""}
+ 
+
+ 
+ Date£º2016-08-24 18:00:03,824 
+ ThreadID:[154] 
+ Level£º  INFO  
+ Message£ºWebServiceResponse{"Message":"The request is invalid.","MessageDetail":"The parameters dictionary contains a null entry for parameter 'id' of non-nullable type 'System.Int32' for method 'System.String Get(Int32)' in 'WebApi.Controllers.ValuesController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter."}
+ 
+
+ 
+ Date£º2016-08-24 18:02:56,564 
+ ThreadID:[145] 
+ Level£º  INFO  
+ Message£ºWebServiceRequestParams{"id":"5"}
+ 
