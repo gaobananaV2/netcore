@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WCFClient
 {
@@ -12,6 +8,14 @@ namespace WCFClient
         {
             TestService1();
             TestService2();
+            TestHttpService();
+            Console.Read();
+        }
+
+        private static void TestHttpService()
+        {
+            http.SR.Service1Client client = new http.SR.Service1Client();
+            Console.WriteLine(client.GetData(2));  
         }
 
         private static void TestService2()

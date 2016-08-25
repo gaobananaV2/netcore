@@ -130,6 +130,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFHost", "WCFHost\WCFHost.csproj", "{3FA44D1F-8B9E-4D52-BB12-DAE9C6B2C513}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFClient", "WCFClient\WCFClient.csproj", "{758D99A1-953F-4F38-9DE7-18F48BC2B312}"
+	ProjectSection(ProjectDependencies) = postProject
+		{529B6737-1852-4012-B267-CCC060E59D3D} = {529B6737-1852-4012-B267-CCC060E59D3D}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
