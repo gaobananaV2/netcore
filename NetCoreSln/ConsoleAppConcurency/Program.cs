@@ -158,9 +158,21 @@ namespace ConsoleAppConcurency
 
         #region Task
         //1: ThreadPool不支持线程的取消、完成、失败通知等交互性操作
-        //2: ThreadPool不支持线程执行的先后次序；
+        //2: ThreadPool不支持线程执行的先后次序
         #endregion
 
         //http://www.cnblogs.com/luminji/archive/2011/05/13/2044801.html
+        //ThreadPool是一个公共的线程池，如果你想要实现自己的线程池的话，需要自行实现
+        //.NET Framework里面大多数异步的东西（如Timer）都是用的ThreadPool
+        //threadPool 本身正是为了减少线程使用数量，避免过多上下文切换才设计出来的。内存占用肯定会比新建大幅数量的线程少的多
+        //.NET Framework 提供的线程池效率中庸的一大原因就是提供第三方保障，如内存和线程安全
+        //其实.NET自带的线程池效率很高，经过很大调整和优化的，一般实现都比不过它 
+        //如果不是有绝对的“违背”，只要封装一下ThreadPool就可以了，比如负载均衡，任务取消都可以实现，MSDN Magazine中有一个系列谈了很多这方面的问题，可以一看。
+        //net的线程池的优点很多，就是没有任务管理的方法
+        //大家应该知道每个进程只会有一个threadpool,也就是说如果你再用threadpool，那么别人写的代码也可能在用threadpool，
+        //因为一个进程的代码可能包括多个模块，
+        //而这些模块可能由不同的人开发的，而线程池事实上是用一个队列来隔离请求与处理的，那么大家就都往这个队列里压入workcallback，
+        //好了，队列就变得越来越庞大，后面进来的workcallback就在那里等着吧。这还好，最要命的就是v.net本身很多多线程处理的任务也是用的threadpool，
+        //比如wcf，那么这个时候就完了，外面的请求就开始变的慢，甚至开始超时。。。
     }
 }
