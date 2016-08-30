@@ -160,5 +160,7 @@ namespace ConsoleAppConcurency
         //1: ThreadPool不支持线程的取消、完成、失败通知等交互性操作
         //2: ThreadPool不支持线程执行的先后次序；
         #endregion
+
+        //http://www.cnblogs.com/luminji/archive/2011/05/13/2044801.html
     }
 }
