@@ -5,6 +5,7 @@ using MockAndInject.Ninject;
 
 namespace MockAndInject
 {
+    //http://www.codeproject.com/Articles/1116189/Mock-Inject-your-Service-with-Moq-and-Ninject
     [TestClass]
     public class UnitTestServiceNinject
     {
