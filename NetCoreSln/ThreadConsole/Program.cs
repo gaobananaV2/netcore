@@ -18,7 +18,9 @@ namespace ThreadConsole
             //DeadLock();
             //TestSemaphore();
             //TestSemaphoreProcess();
-            TestManualResetEvent();
+            //TestManualResetEvent();
+            //TestAutoResetEvent();
+            TestMannulEvent();
         }
 
         private static void TestThread()
@@ -148,7 +150,7 @@ namespace ThreadConsole
         //信号量说简单点就是为了线程同步，或者说是为了限制线程能运行的数量。
         //那它又是怎么限制线程的数量的哩？是因为它内部有个计数器，比如你想限制最多5个线程运行，那么这个计数器的值就会被设置成5，如果一个线程调用了这个Semaphore，那么它的计数器就会相应的减1，直到这个计数器变为0。这时，如果有另一个线程继续调用这个Semaphore，那么这个线程就会被阻塞。
         //获得Semaphore的线程处理完它的逻辑之后，你就可以调用它的Release()函数将它的计数器重新加1，这样其它被阻塞的线程就可以得到调用了。
-        
+
         //我设置一个最大允许5个线程允许的信号量
         //并将它的计数器的初始值设为0
         //这就是说除了调用该信号量的线程都将被阻塞
@@ -184,7 +186,7 @@ namespace ThreadConsole
         static void TestSemaphoreProcess()
         {
             Semaphore seamphore = new Semaphore(5, 5, "SemaphoreExample");
-             
+
             seamphore.WaitOne();
             Console.WriteLine("Seamphore 1");
             seamphore.WaitOne();
@@ -201,6 +203,7 @@ namespace ThreadConsole
 
         #region Event
         //http://www.cnblogs.com/qingyun163/archive/2013/01/05/2846633.html
+        //http://www.codeguru.com/csharp/.net/net_framework/thread-synchronization-using-reset-events-in-.net-framework.htm
         public class EventWaitTest
         {
             private string name; //顾客姓名 
@@ -263,6 +266,88 @@ namespace ThreadConsole
             Console.Read();
         }
         #endregion
+
+        #region AutoResetEvent
+        static AutoResetEvent _autoResetEvent = new AutoResetEvent(false);
+        static void TestAutoResetEvent()
+        {
+            Thread thread1 = new Thread(new ParameterizedThreadStart(PrintNames));
+            thread1.Name = "Thread1";
+            thread1.Start("Simon");
+            Console.WriteLine("Thread1 invoked");
+            Thread thread2 = new Thread(new ParameterizedThreadStart(PrintNames));
+            thread2.Name = "Thread2";
+            thread2.Start("Bear Grylls");
+            Console.WriteLine("Thread2 invoked");
+            Thread thread3 = new Thread(new ParameterizedThreadStart(PrintNames));
+            thread3.Name = "Thread3";
+            thread3.Start("Les Stroud");
+            Console.WriteLine("Thread3 invoked");
+            Console.WriteLine("All the three threads are waiting in AddNames function!");
+            //Release the first thread and let it take care of releasing the rest
+            _autoResetEvent.Set();
+            Console.ReadLine();
+        }
+
+        static void PrintNames(object name)
+        {
+            //Do some processing
+            //Make all the incoming threads wait until it is signaled.
+            _autoResetEvent.WaitOne();
+            Console.WriteLine("{0} released!", Thread.CurrentThread.Name);
+            Console.WriteLine("Name given: {0}", name);
+            //Release the next thread
+            _autoResetEvent.Set();
+        }
+        #endregion
+
+        #region ManualResetEvent
+        static ManualResetEvent _manualResetEvent = new ManualResetEvent(false);
+
+        static void TestMannulEvent()
+        {
+            Thread thread1 = new Thread(new ParameterizedThreadStart(PrintNames2));
+            thread1.Name = "Thread1";
+            thread1.Start("Simon");
+            Console.WriteLine("Thread1 invoked");
+            Thread thread2 = new Thread(new ParameterizedThreadStart(PrintNames2));
+            thread2.Name = "Thread2";
+            thread2.Start("Bear Grylls");
+            Console.WriteLine("Thread2 invoked");
+            Thread thread3 = new Thread(new ParameterizedThreadStart(PrintNames2));
+            thread3.Name = "Thread3";
+            thread3.Start("Les Stroud");
+            Console.WriteLine("Thread3 invoked");
+            Console.WriteLine("All the three threads are waiting in AddNames function!");
+
+            //Release the first thread and let it take care of releasing the rest
+            _manualResetEvent.Set();
+
+            Console.ReadLine();
+        }
+
+        static void PrintNames2(object name)
+        {
+            //Do some processing
+            //Make all the incoming threads wait until it is signaled.
+            _manualResetEvent.WaitOne();
+            Console.WriteLine("{0} released!", Thread.CurrentThread.Name);
+            //Try making the threads wait again. This will not succeed as an explicit reset is required for ManualResetEvent
+            _manualResetEvent.WaitOne();
+            Console.WriteLine("Name given: {0}", name);
+        }
+        #endregion
+
+        //AutoResetEvent:
+        //1. Once signaled only one thread is released.
+        //2. Reset happens automatically after the thread is released.
+
+        //ManualResetEvent:
+        //1. Once signaled all the threads are released.
+        //2. Reset should be manually done using the Reset method of the wait handle.Until the threads are explicitly un-signaled they will not wait on the Wait methods.
+        
+        //If the threads executing a particular method should be synchronized so that the method resource is accessed by one thread at a time, then use AutoResetEvent.
+        //If all the threads should wait for an event to be completed by another thread and can start processing simultaneously after the event is occurred, then go for ManualResetEvent.
     }
 
     #region    Thread locking   

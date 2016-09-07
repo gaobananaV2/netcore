@@ -140,6 +140,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadConsole", "ThreadCons
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsMutex", "WindowsFormsApplication1\WindowsFormsMutex.csproj", "{042F7B35-C5E7-47E8-AD24-A0AE455A7DFE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestNunit", "UnitTestNunit\UnitTestNunit.csproj", "{5AFD8C08-1D82-44C1-BFD3-6116FCE4BDA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -330,6 +332,10 @@ Global
 		{042F7B35-C5E7-47E8-AD24-A0AE455A7DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{042F7B35-C5E7-47E8-AD24-A0AE455A7DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{042F7B35-C5E7-47E8-AD24-A0AE455A7DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AFD8C08-1D82-44C1-BFD3-6116FCE4BDA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AFD8C08-1D82-44C1-BFD3-6116FCE4BDA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AFD8C08-1D82-44C1-BFD3-6116FCE4BDA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AFD8C08-1D82-44C1-BFD3-6116FCE4BDA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -383,5 +389,6 @@ Global
 		{41875D6B-6E9C-46DA-88A9-A9AC32BD328F} = {C56C3D59-2944-4425-88DC-36D92B0C08F1}
 		{29721588-BE4C-40A0-B34F-B864476128D8} = {EEDC2535-4D0B-486B-A1EC-CC15B913D5F4}
 		{042F7B35-C5E7-47E8-AD24-A0AE455A7DFE} = {EEDC2535-4D0B-486B-A1EC-CC15B913D5F4}
+		{5AFD8C08-1D82-44C1-BFD3-6116FCE4BDA6} = {0BA1B4E9-8EBF-475A-9088-7971927E00DE}
 	EndGlobalSection
 EndGlobal
