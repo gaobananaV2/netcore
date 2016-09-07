@@ -14,7 +14,7 @@ namespace UnitTestNunit
         }
 
         [Test]
-        public void Test_getCurrentUser()
+        public void NunitTest_getCurrentUser()
         {
             var service = container.GetInstance<IService>();
             var dto = service.getCurrentUser();
@@ -22,7 +22,7 @@ namespace UnitTestNunit
         }
 
         [Test]
-        public void Test_postValidateUserA()
+        public void NunitTest_postValidateUserA()
         {
             var service = container.GetInstance<IService>();
             var dto = service.postValidateUser("123", "MoqAndNinject");
@@ -30,11 +30,12 @@ namespace UnitTestNunit
         }
 
         [Test]
-        public void Test_postValidateUserB()
+        public void NunitTest_postValidateUserB()
         {
             var service = container.GetInstance<IService>();
             var dto = service.postValidateUser("123", "123");
             Assert.AreEqual("DontTryToHackMe", dto.UserName);
         }
+
     }
 }
