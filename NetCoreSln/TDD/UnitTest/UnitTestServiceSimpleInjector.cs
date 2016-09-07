@@ -6,10 +6,10 @@ using MockAndInject.ViewModel;
 namespace MockAndInject
 {
     [TestClass]
-    public class UnitTestService2
+    public class UnitTestServiceSimpleInjector
     {
         Container container = new Container();
-        public UnitTestService2()
+        public UnitTestServiceSimpleInjector()
         { 
             container.Register<IService, ServiceMock>(Lifestyle.Transient); 
         }

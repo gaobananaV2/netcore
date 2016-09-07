@@ -6,9 +6,9 @@ using MockAndInject.Ninject;
 namespace MockAndInject
 {
     [TestClass]
-    public class UnitTestService
+    public class UnitTestServiceNinject
     {
-        public UnitTestService()
+        public UnitTestServiceNinject()
         {
             IocKernel.Initialize(new DIModule()); 
         }

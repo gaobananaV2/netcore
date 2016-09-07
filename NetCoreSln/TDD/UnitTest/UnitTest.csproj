@@ -74,9 +74,9 @@
     <Compile Include="Ninject\DIModule.cs" />
     <Compile Include="Ninject\IocKernel.cs" />
     <Compile Include="Service.cs" />
-    <Compile Include="UnitTestService.cs" />
+    <Compile Include="UnitTestServiceNinject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTestService2.cs" />
+    <Compile Include="UnitTestServiceSimpleInjector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
