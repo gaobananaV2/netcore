@@ -1,4 +1,5 @@
 ﻿using MVCWebApp.Models;
+using StackExchange.Profiling;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,16 +10,21 @@ namespace MVCWebApp.Controllers
 {
     public class TestController : Controller
     {
+        MiniProfiler profiler = MiniProfiler.Current;
+
         // GET: Test
         public ActionResult Index()
-        { 
-            if (true)
+        {
+            using (profiler.Step("peak Profile Index"))
             {
-                return Content("Hi Welcome"); //return View();
-            }
-            else
-            {
-                //return Content("Hi Welcome");
+                if (true)
+                {
+                    return   View();
+                }
+                else
+                {
+                    //return Content("Hi Welcome");
+                }
             }
         }
 

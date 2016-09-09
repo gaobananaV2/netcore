@@ -1,4 +1,4 @@
-﻿
+﻿@using StackExchange.Profiling;
 @{
     Layout = null;
 }
@@ -9,10 +9,11 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>View</title>
-</head>
+</head>@MiniProfiler.RenderIncludes()
 <body>
     <div> 
         test view
-    </div>
+</div>
+
 </body>
 </html>
