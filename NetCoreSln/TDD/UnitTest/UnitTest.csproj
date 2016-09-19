@@ -52,6 +52,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Web" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -68,18 +69,47 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Mock\ServiceMock.cs" />
-    <Compile Include="Model\DTO\UserDTO.cs" />
-    <Compile Include="Model\Interfaces\IService.cs" />
-    <Compile Include="Ninject\DIModule.cs" />
-    <Compile Include="Ninject\IocKernel.cs" />
-    <Compile Include="Service.cs" />
-    <Compile Include="UnitTestServiceNinject.cs" />
+    <Compile Include="GangOfFour\Creational\1 Abstract Factory\UnitTestAbstractFactory.cs" />
+    <Compile Include="GangOfFour\Principles\old\Product.cs" />
+    <Compile Include="GangOfFour\Principles\old\ProductRepository.cs" />
+    <Compile Include="GangOfFour\Principles\old\ProductService.cs" />
+    <Compile Include="MockAndInject\Mock\ServiceMock.cs" />
+    <Compile Include="MockAndInject\Model\DTO\UserDTO.cs" />
+    <Compile Include="MockAndInject\Model\Interfaces\IService.cs" />
+    <Compile Include="MockAndInject\Ninject\DIModule.cs" />
+    <Compile Include="MockAndInject\Ninject\IocKernel.cs" />
+    <Compile Include="MockAndInject\Service.cs" />
+    <Compile Include="MockAndInject\UnitTestServiceNinject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitTestServiceSimpleInjector.cs" />
+    <Compile Include="MockAndInject\UnitTestServiceSimpleInjector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GangOfFour\Behavioral\13 Chain of Responsibility\" />
+    <Folder Include="GangOfFour\Behavioral\14 Command\" />
+    <Folder Include="GangOfFour\Behavioral\15 Interpreter\" />
+    <Folder Include="GangOfFour\Behavioral\16 Iterator\" />
+    <Folder Include="GangOfFour\Behavioral\17 Mediator\" />
+    <Folder Include="GangOfFour\Behavioral\18 Memento\" />
+    <Folder Include="GangOfFour\Behavioral\19 Observer\" />
+    <Folder Include="GangOfFour\Behavioral\20 State\" />
+    <Folder Include="GangOfFour\Behavioral\21 Strategy\" />
+    <Folder Include="GangOfFour\Behavioral\22 Template Method\" />
+    <Folder Include="GangOfFour\Behavioral\23 Visitor\" />
+    <Folder Include="GangOfFour\Creational\2 Factory\" />
+    <Folder Include="GangOfFour\Creational\3 Builder\" />
+    <Folder Include="GangOfFour\Creational\4 Prototype\" />
+    <Folder Include="GangOfFour\Creational\5 Singleton\" />
+    <Folder Include="GangOfFour\Principles\new\" />
+    <Folder Include="GangOfFour\Structural\10 Facade\" />
+    <Folder Include="GangOfFour\Structural\11 Flyweight\" />
+    <Folder Include="GangOfFour\Structural\12 Proxy\" />
+    <Folder Include="GangOfFour\Structural\6  Adapter\" />
+    <Folder Include="GangOfFour\Structural\7 Bridge\" />
+    <Folder Include="GangOfFour\Structural\8 Composite\" />
+    <Folder Include="GangOfFour\Structural\9 Decorator\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
