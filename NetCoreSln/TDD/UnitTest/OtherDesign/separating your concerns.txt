@@ -1,0 +1,1 @@
+﻿Layering an application is a form of separation of concerns and can be achieved via namespaces, folders, or with separate projects.

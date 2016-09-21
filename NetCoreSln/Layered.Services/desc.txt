@@ -1,0 +1,4 @@
+﻿service layer, which will act as the gateway into the application
+The role of the service layer is to act as an entry point into the application; sometimes this is known as a facade.
+     
+   

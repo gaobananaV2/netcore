@@ -69,6 +69,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="EnterprisePatterns\Null Object Pattern\NullObjectCache.cs" />
     <Compile Include="GangOfFour\Creational\1 Abstract Factory\UnitTestAbstractFactory.cs" />
     <Compile Include="GangOfFour\Principles\refactoring\Cache\HttpContextCacheAdapter.cs" />
     <Compile Include="GangOfFour\Principles\refactoring\Cache\ICacheStorage.cs" />
@@ -121,6 +122,9 @@
     <Folder Include="GangOfFour\Structural\7 Bridge\" />
     <Folder Include="GangOfFour\Structural\8 Composite\" />
     <Folder Include="GangOfFour\Structural\9 Decorator\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OtherDesign\separating your concerns.txt" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
