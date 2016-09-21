@@ -70,9 +70,21 @@
   </Choose>
   <ItemGroup>
     <Compile Include="GangOfFour\Creational\1 Abstract Factory\UnitTestAbstractFactory.cs" />
+    <Compile Include="GangOfFour\Principles\refactoring\Cache\HttpContextCacheAdapter.cs" />
+    <Compile Include="GangOfFour\Principles\refactoring\Cache\ICacheStorage.cs" />
+    <Compile Include="GangOfFour\Principles\refactoring\IProductRepository.cs" />
     <Compile Include="GangOfFour\Principles\old\Product.cs" />
     <Compile Include="GangOfFour\Principles\old\ProductRepository.cs" />
     <Compile Include="GangOfFour\Principles\old\ProductService.cs" />
+    <Compile Include="GangOfFour\Principles\refactoring\Cache\MemcachedCacheAdapter.cs" />
+    <Compile Include="GangOfFour\Principles\refactoring\Cache\MSVelocityCacheAdapter.cs" />
+    <Compile Include="GangOfFour\Principles\refactoring\Product.cs" />
+    <Compile Include="GangOfFour\Principles\refactoring\ProductRepository.cs" />
+    <Compile Include="GangOfFour\Principles\refactoring\ProductService.cs" />
+    <Compile Include="GangOfFour\Structural\6  Adapter\HttpContextCacheAdapter.cs" />
+    <Compile Include="GangOfFour\Structural\6  Adapter\ICacheStorage.cs" />
+    <Compile Include="GangOfFour\Structural\6  Adapter\MemcachedCacheAdapter.cs" />
+    <Compile Include="GangOfFour\Structural\6  Adapter\MSVelocityCacheAdapter.cs" />
     <Compile Include="MockAndInject\Mock\ServiceMock.cs" />
     <Compile Include="MockAndInject\Model\DTO\UserDTO.cs" />
     <Compile Include="MockAndInject\Model\Interfaces\IService.cs" />
@@ -84,6 +96,7 @@
     <Compile Include="MockAndInject\UnitTestServiceSimpleInjector.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="GangOfFour\Structural\6  Adapter\Adapter.docx" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -102,11 +115,9 @@
     <Folder Include="GangOfFour\Creational\3 Builder\" />
     <Folder Include="GangOfFour\Creational\4 Prototype\" />
     <Folder Include="GangOfFour\Creational\5 Singleton\" />
-    <Folder Include="GangOfFour\Principles\new\" />
     <Folder Include="GangOfFour\Structural\10 Facade\" />
     <Folder Include="GangOfFour\Structural\11 Flyweight\" />
     <Folder Include="GangOfFour\Structural\12 Proxy\" />
-    <Folder Include="GangOfFour\Structural\6  Adapter\" />
     <Folder Include="GangOfFour\Structural\7 Bridge\" />
     <Folder Include="GangOfFour\Structural\8 Composite\" />
     <Folder Include="GangOfFour\Structural\9 Decorator\" />
