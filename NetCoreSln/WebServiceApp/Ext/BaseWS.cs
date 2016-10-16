@@ -43,10 +43,10 @@ namespace WebServiceApp.Ext
             try
             {
 
-                if (!Auth(request.Head))
-                {
+                //if (!Auth(request.Head))
+                //{
 
-                }
+                //}
 
                 //判断反序列化是否成功
                 if (request == null)
@@ -63,14 +63,14 @@ namespace WebServiceApp.Ext
             {
                 //Log.Error(soaExp.Message, soaExp);
 
-                response.Head.SetHeaderInfo(request.Head);
+                // response.Head.SetHeaderInfo(request.Head);
                 // response.Head.SetResult(ResultCode.Fail, soaExp.ResultNo, soaExp.Message);
                 return response;
             }
             catch (Exception exp)
             {
                 //Log.Error(exp.Message, exp);
-                response.Head.SetHeaderInfo(request.Head);
+                // response.Head.SetHeaderInfo(request.Head);
                 //response.Head.SetResult(ResultCode.Fail, 500, exp.Message);
                 return response;
             }
