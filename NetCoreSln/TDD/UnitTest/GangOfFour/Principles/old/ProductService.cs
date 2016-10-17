@@ -35,12 +35,13 @@ namespace MockAndInject.GangOfFour.Principles.old
     
     //2. ProductRepository class connecting to a real
     //database, you’re unable to test the ProductService ’s method because of the tight coupling
-    //that exists between these two classes.Another problem related to testing is the dependency
+    //that exists between these two classes.
+    
+    //3.Another problem related to testing is the dependency
     //on the HTTP context for use in the caching of the products.It is hard to test code that is so
     //tightly coupled to HTTP context.
-    //You’re stuck with the HTTP context for caching.In its current state, using a different cache
-    
-    //3. storage provider such as Velocity or Memcached would require altering of the  ProductService
+    //You’re stuck with the HTTP context for caching.In its current state, using a different cache    
+    // storage provider such as Velocity or Memcached would require altering of the  ProductService
     //class and any other class that uses caching.Velocity and Memcached are both distributed mem-
     //ory object caching systems that can be used in place of ASP.NET’s default caching mechanism.
 }

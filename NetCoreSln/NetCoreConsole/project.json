@@ -5,10 +5,13 @@
   },
 
   "dependencies": {
+    "bootstrap": "4.0.0-alpha3",
+    "jQuery": "3.1.1",
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.0"
-    }
+    },
+    "WebGrease": "1.6.0"
   },
 
   "frameworks": {

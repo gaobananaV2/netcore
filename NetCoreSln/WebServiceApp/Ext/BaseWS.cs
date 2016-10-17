@@ -40,40 +40,40 @@ namespace WebServiceApp.Ext
         {
             var response = new Response();
 
-            try
-            {
+            //try
+            //{
 
-                //if (!Auth(request.Head))
-                //{
+            //    if (!Auth(request.Head))
+            //    {
 
-                //}
+            //    }
 
-                //判断反序列化是否成功
-                if (request == null)
-                {
+            //    //判断反序列化是否成功
+            //    if (request == null)
+            //    {
 
-                }
+            //    }
 
-                //todo:安全校验iplist
+            //    //todo:安全校验iplist
 
 
-                return RequestDeal(request, response);
-            }
-            catch (SoapException soaExp)
-            {
-                //Log.Error(soaExp.Message, soaExp);
+            //    return RequestDeal(request, response);
+            //}
+            //catch (SoapException soaExp)
+            //{
+            //    //Log.Error(soaExp.Message, soaExp);
 
-                // response.Head.SetHeaderInfo(request.Head);
-                // response.Head.SetResult(ResultCode.Fail, soaExp.ResultNo, soaExp.Message);
+            //    response.Head.SetHeaderInfo(request.Head);
+            //    // response.Head.SetResult(ResultCode.Fail, soaExp.ResultNo, soaExp.Message);
+            //    return response;
+            //}
+            //catch (Exception exp)
+            //{
+            //    //Log.Error(exp.Message, exp);
+            //    response.Head.SetHeaderInfo(request.Head);
+            //    //response.Head.SetResult(ResultCode.Fail, 500, exp.Message);
                 return response;
-            }
-            catch (Exception exp)
-            {
-                //Log.Error(exp.Message, exp);
-                // response.Head.SetHeaderInfo(request.Head);
-                //response.Head.SetResult(ResultCode.Fail, 500, exp.Message);
-                return response;
-            }
+            //}
         }
 
         /// <summary>
