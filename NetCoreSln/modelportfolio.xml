@@ -1,0 +1,232 @@
+﻿<EntityType Name="wsl_modelportfolio" BaseType="mscrm.crmbaseentity">
+  <Key>
+    <PropertyRef Name="wsl_modelportfolioid" />
+  </Key>
+  <Property Name="createdon" Type="Edm.DateTimeOffset">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Date and time when the record was created." />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="timezoneruleversionnumber" Type="Edm.Int32">
+    <Annotation Term="Org.OData.Core.V1.Description" String="For internal use only." />
+  </Property>
+  <Property Name="_wsl_riskprofileid_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier for Risk Profile associated with Model Portfolio." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="statecode" Type="Edm.Int32">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Status of the Model Portfolio" />
+  </Property>
+  <Property Name="wsl_type" Type="Edm.Int32">
+    <Annotation Term="Org.OData.Core.V1.Description" String="" />
+  </Property>
+  <Property Name="_owningbusinessunit_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier for the business unit that owns the record" />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="wsl_publishstatus" Type="Edm.Int32">
+    <Annotation Term="Org.OData.Core.V1.Description" String="" />
+  </Property>
+  <Property Name="_ownerid_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Owner Id" />
+  </Property>
+  <Property Name="wsl_name" Type="Edm.String" Unicode="false">
+    <Annotation Term="Org.OData.Core.V1.Description" String="The name of the custom entity." />
+  </Property>
+  <Property Name="wsl_marketcommentary" Type="Edm.String" Unicode="false">
+    <Annotation Term="Org.OData.Core.V1.Description" String="" />
+  </Property>
+  <Property Name="_createdonbehalfby_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier of the delegate user who created the record." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="_modifiedby_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier of the user who modified the record." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="wsl_versionid" Type="Edm.Decimal" Scale="Variable">
+    <Annotation Term="Org.OData.Core.V1.Description" String="" />
+  </Property>
+  <Property Name="_owninguser_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier for the user that owns the record." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="_wsl_providerid_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier for Provider associated with Global Model Portfolio." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="versionnumber" Type="Edm.Int64" ConcurrencyMode="Fixed">
+    <Annotation Term="Org.OData.Core.V1.Description" String="" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="_createdby_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier of the user who created the record." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="overriddencreatedon" Type="Edm.DateTimeOffset">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Date and time that the record was migrated." />
+  </Property>
+  <Property Name="_wsl_modelallocationid_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier for Model Allocation associated with Model Portfolio." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="modifiedon" Type="Edm.DateTimeOffset">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Date and time when the record was modified." />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="importsequencenumber" Type="Edm.Int32">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Sequence number of the import that created this record." />
+  </Property>
+  <Property Name="wsl_modelmodelportfoliochangedate" Type="Edm.Date">
+    <Annotation Term="Org.OData.Core.V1.Description" String="same as from date" />
+  </Property>
+  <Property Name="wsl_publishsuccess" Type="Edm.Boolean">
+    <Annotation Term="Org.OData.Core.V1.Description" String="" />
+  </Property>
+  <Property Name="wsl_enddate" Type="Edm.Date">
+    <Annotation Term="Org.OData.Core.V1.Description" String="" />
+  </Property>
+  <Property Name="wsl_modelportfolioid" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier for entity instances" />
+  </Property>
+  <Property Name="_wsl_modelportfolioorgid_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier for Model Portfolio associated with Model Portfolio." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="statuscode" Type="Edm.Int32">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Reason for the status of the Model Portfolio" />
+  </Property>
+  <Property Name="_wsl_currencyid_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier for Currency associated with Global Model Portfolio." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="_modifiedonbehalfby_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier of the delegate user who modified the record." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="wsl_isactiveversion" Type="Edm.Boolean">
+    <Annotation Term="Org.OData.Core.V1.Description" String="" />
+  </Property>
+  <Property Name="_owningteam_value" Type="Edm.Guid">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Unique identifier for the team that owns the record." />
+    <Annotation Term="Org.OData.Core.V1.Computed" Bool="true" />
+    <Annotation Term="Org.OData.Core.V1.Permissions">
+      <EnumMember>Org.OData.Core.V1.PermissionType/Read</EnumMember>
+    </Annotation>
+  </Property>
+  <Property Name="wsl_currency" Type="Edm.String" Unicode="false">
+    <Annotation Term="Org.OData.Core.V1.Description" String="" />
+  </Property>
+  <Property Name="wsl_modelmodelportfolioid" Type="Edm.String" Unicode="false">
+    <Annotation Term="Org.OData.Core.V1.Description" String="" />
+  </Property>
+  <Property Name="utcconversiontimezonecode" Type="Edm.Int32">
+    <Annotation Term="Org.OData.Core.V1.Description" String="Time zone code that was in use when the record was created." />
+  </Property>
+  <NavigationProperty Name="createdbyname" Type="mscrm.systemuser" Nullable="false" Partner="lk_wsl_modelportfolio_createdby">
+    <ReferentialConstraint Property="_createdby_value" ReferencedProperty="systemuserid" />
+  </NavigationProperty>
+  <NavigationProperty Name="createdonbehalfbyname" Type="mscrm.systemuser" Nullable="false" Partner="lk_wsl_modelportfolio_createdonbehalfby">
+    <ReferentialConstraint Property="_createdonbehalfby_value" ReferencedProperty="systemuserid" />
+  </NavigationProperty>
+  <NavigationProperty Name="modifiedbyname" Type="mscrm.systemuser" Nullable="false" Partner="lk_wsl_modelportfolio_modifiedby">
+    <ReferentialConstraint Property="_modifiedby_value" ReferencedProperty="systemuserid" />
+  </NavigationProperty>
+  <NavigationProperty Name="modifiedonbehalfbyname" Type="mscrm.systemuser" Nullable="false" Partner="lk_wsl_modelportfolio_modifiedonbehalfby">
+    <ReferentialConstraint Property="_modifiedonbehalfby_value" ReferencedProperty="systemuserid" />
+  </NavigationProperty>
+  <NavigationProperty Name="owninguser" Type="mscrm.systemuser" Nullable="false" Partner="user_wsl_modelportfolio">
+    <ReferentialConstraint Property="_owninguser_value" ReferencedProperty="systemuserid" />
+  </NavigationProperty>
+  <NavigationProperty Name="owningteam" Type="mscrm.team" Nullable="false" Partner="team_wsl_modelportfolio">
+    <ReferentialConstraint Property="_owningteam_value" ReferencedProperty="teamid" />
+  </NavigationProperty>
+  <NavigationProperty Name="ownerid" Type="mscrm.principal" Nullable="false" Partner="owner_wsl_modelportfolio">
+    <ReferentialConstraint Property="_ownerid_value" ReferencedProperty="ownerid" />
+  </NavigationProperty>
+  <NavigationProperty Name="owningbusinessunit" Type="mscrm.businessunit" Nullable="false" Partner="business_unit_wsl_modelportfolio">
+    <ReferentialConstraint Property="_owningbusinessunit_value" ReferencedProperty="businessunitid" />
+  </NavigationProperty>
+  <NavigationProperty Name="wsl_modelportfolio_ActivityPointers" Type="Collection(mscrm.activitypointer)" Partner="regardingobjectid_wsl_modelportfolio" />
+  <NavigationProperty Name="wsl_modelportfolio_Appointments" Type="Collection(mscrm.appointment)" Partner="regardingobjectid_wsl_modelportfolio_appointment" />
+  <NavigationProperty Name="wsl_modelportfolio_Emails" Type="Collection(mscrm.email)" Partner="regardingobjectid_wsl_modelportfolio_email" />
+  <NavigationProperty Name="wsl_modelportfolio_Faxes" Type="Collection(mscrm.fax)" Partner="regardingobjectid_wsl_modelportfolio_fax" />
+  <NavigationProperty Name="wsl_modelportfolio_Letters" Type="Collection(mscrm.letter)" Partner="regardingobjectid_wsl_modelportfolio_letter" />
+  <NavigationProperty Name="wsl_modelportfolio_PhoneCalls" Type="Collection(mscrm.phonecall)" Partner="regardingobjectid_wsl_modelportfolio_phonecall" />
+  <NavigationProperty Name="wsl_modelportfolio_ServiceAppointments" Type="Collection(mscrm.serviceappointment)" Partner="regardingobjectid_wsl_modelportfolio_serviceappointment" />
+  <NavigationProperty Name="wsl_modelportfolio_Tasks" Type="Collection(mscrm.task)" Partner="regardingobjectid_wsl_modelportfolio_task" />
+  <NavigationProperty Name="wsl_modelportfolio_RecurringAppointmentMasters" Type="Collection(mscrm.recurringappointmentmaster)" Partner="regardingobjectid_wsl_modelportfolio_recurringappointmentmaster" />
+  <NavigationProperty Name="wsl_modelportfolio_SocialActivities" Type="Collection(mscrm.socialactivity)" Partner="regardingobjectid_wsl_modelportfolio_socialactivity" />
+  <NavigationProperty Name="wsl_modelportfolio_connections1" Type="Collection(mscrm.connection)" Partner="record1id_wsl_modelportfolio" />
+  <NavigationProperty Name="wsl_modelportfolio_connections2" Type="Collection(mscrm.connection)" Partner="record2id_wsl_modelportfolio" />
+  <NavigationProperty Name="wsl_modelportfolio_DuplicateMatchingRecord" Type="Collection(mscrm.duplicaterecord)" Partner="duplicaterecordid_wsl_modelportfolio" />
+  <NavigationProperty Name="wsl_modelportfolio_DuplicateBaseRecord" Type="Collection(mscrm.duplicaterecord)" Partner="baserecordid_wsl_modelportfolio" />
+  <NavigationProperty Name="wsl_modelportfolio_Annotations" Type="Collection(mscrm.annotation)" Partner="objectid_wsl_modelportfolio" />
+  <NavigationProperty Name="wsl_modelportfolio_AsyncOperations" Type="Collection(mscrm.asyncoperation)" Partner="regardingobjectid_wsl_modelportfolio" />
+  <NavigationProperty Name="wsl_modelportfolio_BulkDeleteFailures" Type="Collection(mscrm.bulkdeletefailure)" Partner="regardingobjectid_wsl_modelportfolio" />
+  <NavigationProperty Name="wsl_currencyid" Type="mscrm.transactioncurrency" Nullable="false" Partner="wsl_transactioncurrency_wsl_modelportfolio_currencyid">
+    <ReferentialConstraint Property="_wsl_currencyid_value" ReferencedProperty="transactioncurrencyid" />
+  </NavigationProperty>
+  <NavigationProperty Name="wsl_modelallocationid" Type="mscrm.wsl_modelallocation" Nullable="false" Partner="wsl_wsl_modelallocation_wsl_modelportfolio">
+    <ReferentialConstraint Property="_wsl_modelallocationid_value" ReferencedProperty="wsl_modelallocationid" />
+  </NavigationProperty>
+  <NavigationProperty Name="wsl_wsl_modelportfolio_wsl_modelportfoliodeta" Type="Collection(mscrm.wsl_modelportfoliodetail)" Partner="wsl_modelportfolioid" />
+  <NavigationProperty Name="wsl_riskprofileid" Type="mscrm.wsl_riskprofile" Nullable="false" Partner="wsl_wsl_riskprofile_wsl_modelportfolio">
+    <ReferentialConstraint Property="_wsl_riskprofileid_value" ReferencedProperty="wsl_riskprofileid" />
+  </NavigationProperty>
+  <NavigationProperty Name="wsl_wsl_insurance_wsl_modelportfolio" Type="Collection(mscrm.wsl_insurance)" Partner="wsl_wsl_insurance_wsl_modelportfolio" />
+  <NavigationProperty Name="wsl_wsl_modelportfolio_wsl_potentialaccount" Type="Collection(mscrm.wsl_potentialaccount)" Partner="wsl_ModelPortfoliolId1" />
+  <NavigationProperty Name="wsl_wsl_modelportfolio_wsl_potentialaccount2" Type="Collection(mscrm.wsl_potentialaccount)" Partner="wsl_ModelPortfoliolId2" />
+  <NavigationProperty Name="wsl_wsl_modelportfolio_wsl_subaccount" Type="Collection(mscrm.wsl_subaccount)" Partner="wsl_ModelPortfolioId" />
+  <NavigationProperty Name="wsl_ProviderId" Type="mscrm.wsl_transferagent" Nullable="false" Partner="wsl_wsl_transferagent_wsl_modelportfolio">
+    <ReferentialConstraint Property="_wsl_providerid_value" ReferencedProperty="wsl_transferagentid" />
+  </NavigationProperty>
+  <NavigationProperty Name="wsl_modelportfolio_SyncErrors" Type="Collection(mscrm.syncerror)" Partner="regardingobjectid_wsl_modelportfolio" />
+  <NavigationProperty Name="wsl_ModelPortfolioOrgId" Type="mscrm.wsl_modelportfolio" Nullable="false" Partner="wsl_wsl_modelportfolio_wsl_modelportfolio_ModelPortfolioOrgId">
+    <ReferentialConstraint Property="_wsl_modelportfolioorgid_value" ReferencedProperty="wsl_modelportfolioid" />
+  </NavigationProperty>
+  <NavigationProperty Name="wsl_wsl_modelportfolio_wsl_modelportfolio_ModelPortfolioOrgId" Type="Collection(mscrm.wsl_modelportfolio)" Partner="wsl_ModelPortfolioOrgId" />
+  <NavigationProperty Name="wsl_wsl_modelportfolio_wsl_bulkswitchrequest_ModelPortfolio" Type="Collection(mscrm.wsl_bulkswitchrequest)" Partner="wsl_ModelPortfolio" />
+  <NavigationProperty Name="wsl_wsl_modelportfolio_wsl_bulkswitchrequest_ModelPortfolioHistory" Type="Collection(mscrm.wsl_bulkswitchrequest)" Partner="wsl_ModelPortfolioHistory" />
+  <NavigationProperty Name="wsl_wsl_modelportfolio_wsl_businessregister_ActiveModelPortfolio" Type="Collection(mscrm.wsl_businessregister)" Partner="wsl_ActiveModelPortfolio" />
+  <NavigationProperty Name="wsl_wsl_modelportfolio_wsl_businessregister_HistoryModelPortfolio" Type="Collection(mscrm.wsl_businessregister)" Partner="wsl_HistoryModelPortfolio" />
+  <Annotation Term="Org.OData.Core.V1.Description" String="Create and edit global model portfolios, which can be used by the advisors in the whole organization or a specific business unit." />
+</EntityType>
