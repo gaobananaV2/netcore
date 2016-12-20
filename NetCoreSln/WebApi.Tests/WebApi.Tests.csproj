@@ -103,31 +103,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiTest\ApiTestBase.cs" />
-    <Compile Include="ApiTest\ValuesControllerUnitTest.cs" />
-    <Compile Include="Api\HttpClientUtil.cs" />
+    <Compile Include="Utility\ApiTestBase-InMemoryTest.cs" />
+    <Compile Include="ControllerTest\ValuesControllerUnitTest.cs" />
+    <Compile Include="Utility\HttpClientUtil.cs" />
+    <Compile Include="Utility\WebRequestUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controllers\HomeControllerTest.cs" />
-    <Compile Include="Controllers\ValuesControllerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App.config" />
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Scripts\jquery-3.1.1.intellisense.js" />
-    <Content Include="Scripts\jquery-3.1.1.js" />
-    <Content Include="Scripts\jquery-3.1.1.min.js" />
-    <Content Include="Scripts\jquery-3.1.1.slim.js" />
-    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\bootstrap.css.map" />
-    <None Include="Content\bootstrap.min.css.map" />
     <None Include="packages.config" />
-    <None Include="Scripts\jquery-3.1.1.min.map" />
-    <None Include="Scripts\jquery-3.1.1.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Peak.Utilities\Peak.Utilities.csproj">

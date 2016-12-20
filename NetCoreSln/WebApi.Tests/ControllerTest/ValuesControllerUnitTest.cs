@@ -1,9 +1,8 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using WebApi.Tests.Utility;
 
-namespace WebApi.Tests.ApiTest
+namespace WebApi.Tests.ControllerTest
 {
     [TestClass]
     public class ValuesControllerUnitTest : ApiTestBase
