@@ -116,6 +116,7 @@
     <Content Include="HTML\build\react-dom-0.14.0.js" />
     <Content Include="HTML\build\react-with-addons.js" />
     <Content Include="HTML\build\react-with-addons.min.js" />
+    <Content Include="HTML\demo.html" />
     <Content Include="HTML\React\demo1.html" />
     <Content Include="ModelPortfolio\ModelPortfolioReblancing.js" />
     <Content Include="ModelPortfolio\portfolio.html" />

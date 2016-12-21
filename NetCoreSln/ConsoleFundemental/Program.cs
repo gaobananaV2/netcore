@@ -12,4 +12,43 @@ namespace ConsoleFundemental
         {
         }
     }
+
+
+    //public class X
+    //{
+    //    public static X instance = new X();
+
+    //    private X() { } 
+    //}
+
+
+    //public class Xy
+    //{
+    //    public static Xy instance = null;
+
+    //    private Xy() { }
+
+    //    public static Xy GetInstance()
+    //    {
+    //        if (instance == null)
+    //            instance = new Xy();
+    //        return instance;
+    //    }
+
+    //}
+
+    //class TestX
+    //{
+    //    @Before
+    //    public setup()
+    //    {
+    //        X.instance = new XMock();
+    //    }
+    //}
+
+    //public  class XMock: Xy
+    //{ 
+
+    //}
+
 }
