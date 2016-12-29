@@ -10,8 +10,7 @@ namespace test
     {
         static void Main(string[] args)
         {
-            CrmLogServices.CrmLogServiceClient client = new CrmLogServices.CrmLogServiceClient();
-            client.AddLog("test from console!");
+             
         }
     }
 }
