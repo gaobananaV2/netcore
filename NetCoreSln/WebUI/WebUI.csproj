@@ -117,9 +117,10 @@
     <Content Include="HTML\build\react-with-addons.js" />
     <Content Include="HTML\build\react-with-addons.min.js" />
     <Content Include="HTML\demo.html" />
+    <Content Include="HTML\login-horizontal.html" />
+    <Content Include="HTML\login-inline.html" />
+    <Content Include="HTML\login-vertical.html" />
     <Content Include="HTML\React\demo1.html" />
-    <Content Include="ModelPortfolio\ModelPortfolioReblancing.js" />
-    <Content Include="ModelPortfolio\portfolio.html" />
     <Content Include="React\HelloWorld.html" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
@@ -174,7 +175,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="HTML\Angular\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
