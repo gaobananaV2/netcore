@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Data Tables</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- DataTables -->
+    <link href="bootstrap/css/dataTables.bootstrap.css" rel="stylesheet" />
+    <!-- Theme style -->
+    <link href="bootstrap/css/AdminLTE.min.css" rel="stylesheet" />
+    <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+    <link href="bootstrap/css/_all-skins.min.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="bootstrap/js/jquery-2.2.3.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- DataTables -->
+    <script src="bootstrap/js/jquery.dataTables.min.js"></script>
+    <script src="bootstrap/js/dataTables.bootstrap.js"></script>
+    <script src="bootstrap/js/app.min.js"></script>
+    <script> 
+        $(function () {
+            $("#example1").DataTable({
+                "pageLength": 3
+            });
+            $('#example2').DataTable({
+                "pageLength": 3,
+                "paging": true,
+                "lengthChange": false,
+                "searching": false,
+                "ordering": true,
+                "info": true,
+                "autoWidth": false
+            });
+        });
+    </script>
+    <![endif]-->
+    <style>
+        .content-wrapper, .right-side, .main-footer {
+            margin-left: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <div class="box-header">
+            <h3 class="box-title">Hover Data Table</h3>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body">
+            <table id="example2" class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                        <th>Engine version</th>
+                        <th>CSS grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KHTML</td>
+                        <td>Konqureror 3.5</td>
+                        <td>KDE 3.5</td>
+                        <td>3.5</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Tasman</td>
+                        <td>Internet Explorer 4.5</td>
+                        <td>Mac OS 8-9</td>
+                        <td>-</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Tasman</td>
+                        <td>Internet Explorer 5.1</td>
+                        <td>Mac OS 7.6-9</td>
+                        <td>1</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Tasman</td>
+                        <td>Internet Explorer 5.2</td>
+                        <td>Mac OS 8-X</td>
+                        <td>1</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Misc</td>
+                        <td>NetFront 3.1</td>
+                        <td>Embedded devices</td>
+                        <td>-</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Misc</td>
+                        <td>NetFront 3.4</td>
+                        <td>Embedded devices</td>
+                        <td>-</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Misc</td>
+                        <td>Dillo 0.8</td>
+                        <td>Embedded devices</td>
+                        <td>-</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Misc</td>
+                        <td>Links</td>
+                        <td>Text only</td>
+                        <td>-</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Misc</td>
+                        <td>Lynx</td>
+                        <td>Text only</td>
+                        <td>-</td>
+                        <td>X</td>
+                    </tr>
+                    <tr>
+                        <td>Misc</td>
+                        <td>IE Mobile</td>
+                        <td>Windows Mobile 6</td>
+                        <td>-</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Misc</td>
+                        <td>PSP browser</td>
+                        <td>PSP</td>
+                        <td>-</td>
+                        <td>C</td>
+                    </tr>
+                    <tr>
+                        <td>Other browsers</td>
+                        <td>All others</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>U</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Rendering engine</th>
+                        <th>Browser</th>
+                        <th>Platform(s)</th>
+                        <th>Engine version</th>
+                        <th>CSS grade</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <!-- /.box-body -->
+    </div> 
+</body>
+</html>

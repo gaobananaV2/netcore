@@ -107,6 +107,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="HTML\bootstrap-table.html" />
     <Content Include="HTML\build\browser.min.js" />
     <Content Include="HTML\build\jquery.min.js" />
     <Content Include="HTML\build\JSXTransformer.js" />
@@ -175,6 +176,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="HTML\Angular\" />
+    <Folder Include="HTML\bootstrap\js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
